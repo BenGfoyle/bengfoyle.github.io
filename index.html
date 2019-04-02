@@ -3,88 +3,94 @@
 <head>
   <meta charset="utf-8">
   <style>
-  * {box-sizing: border-box}
-  body {font-family: "Lato", sans-serif;}
-  /* Create two equal columns that floats next to each other */
-  /* Create two equal columns that floats next to each other */
+    * {box-sizing: border-box}
+    body { font-family: "Lato", sans-serif;}
+    /* Create two equal columns that floats next to each other */
+    /* Create two equal columns that floats next to each other */
 
 
-  .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 75px; /* Should be removed. Only for demonstration */
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .content {
-    width: 240px;
-    padding: 5px;
-    overflow: hidden;
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 75px; /* Should be removed. Only for demonstration */
     }
 
-  .content img {
-      margin-right: 10px;
-      float: right;
-  }
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-  /* Style the tab */
-  .tab {
-    float: left;
-    background-color: #92D5E6;
-    width: 30%;
-    height: 1500px;
-  }
+    .content {
+      width: 240px;
+      padding: 5px;
+      overflow: hidden;
+      }
 
-  /* Style the buttons inside the tab */
-  .tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-  }
+    .content img {
+        margin-right: 10px;
+        float: right;
+    }
 
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #DBEDF5;
-  }
+    /* Style the tab */
+    .tab {
+      float: left;
+      background-color: #92D5E6;
+      width: 30%;
+      height: 1080px;
+    }
 
-  /* Create an active/current "tab button" class */
-  .tab button.active {
-    background-color: #DBEDF5;
-  }
+    /* Style the buttons inside the tab */
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 17px;
+    }
 
-  /* Style the tab content */
-  .tabcontent {
-    float: left;
-    padding: 0px 12px;
-    width: 70%;
-    border-left: none;
-    height: 1500px;
-  }
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #DBEDF5;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      background-color: #DBEDF5;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      float: left;
+      padding: 0px 12px;
+      width: 70%;
+      border-left: none;
+      height: 1080px;
+    }
   </style>
   <title>Benjamin Guilfoyle</title>
 </head>
-<body>
+<body style = "background-color: #F2F3F4;">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+  <script src="http://www.skulpt.org/static/skulpt.min.js" type="text/javascript"></script>
+  <script src="http://www.skulpt.org/static/skulpt-stdlib.js" type="text/javascript"></script>
 
 <div class="tab">
-  <button class="tablinks" onclick="openSection(event, 'About')" id="defaultOpen">Who am I?</button>
+  <button class="tablinks" onclick="openSection(event, 'About')">Who am I?</button>
   <button class="tablinks" onclick="openSection(event, 'Cons')">Contact</button>
   <button class="tablinks" onclick="openSection(event, 'Refs')">References & Achknowledments</button>
 </div>
+
+
 
 <div id="Refs" class="tabcontent">
   <h3>References & Achknowledments</h3>
@@ -99,41 +105,70 @@
 <div id="About" class="tabcontent">
 
   <div class="tab">
-    <button class="tablinks" onclick="openSection(event, 'basics')">About Me</button>
+    <button class="tablinks" onclick="openSection(event, 'basics')" id = "defaultOpen">About Me</button>
     <button class="tablinks" onclick="openSection(event, 'work')">Work Experience</button>
     <button class="tablinks" onclick="openSection(event, 'projects')">Projects</button>
+    <button class="tablinks" onclick="openSection(event, 'cv')">Resume</button>
   </div>
 </div>
 
 <div id="basics" class="tabcontent">
+  <h1>My name is Ben Guilfoyle</h1>
+    <li>I am a 3rd year Physics with Astrophysics student at Maynooth University</li><br>
+    <li>My main interests are in computer science, problem solving, and annalysis.</li><br>
+    <li>This website aims to highlight some of my skills and projects.</li><br>
+    <li>Most my coding in the past year or so has been done in Python</li><br>
+    <li>As part of my Physics degree I am working physical simuations in Python</li><br>
+    <li>Some of these include my Projectile-Motion project.</li><br>
+    <li>I have taken an interest in crytocurrency and dapp development</li><br>
+    <li>I have designed my own cryptographic tokens on the Ethereum blockchain.</li><br>
+    <li>You can find more detail about all the above throughout this page.</li><br>
 </div>
 
 <div id="work" class="tabcontent">
+  <h1>Work Experience</h1>
+    <li>Last year I spent the Summer working as an intern in Maynooth University</li><br>
+    <li>The task entailed designing a cryptocurrency on the Ethereum blockchain.</li><br>
+    <li>This currency was used as a medium to track students grades annonimously.</li><br>
+    <li>The token could be given by the lecturer to the student, but no student to student</li><br>
+    <li>The token ahs some master functions given to the lecturer.</li><br>
+    <li>One of these features was the Burn function used to clear empty all students wallets.</li><br>
+    <li>I have designed my own cryptographic tokens on the Ethereum blockchain.</li><br>
 </div>
 
 <div id="projects" class="tabcontent">
+  <h1>Projects</h1>
+    <li>Below are some in browser compilers, click files,then the play button in the top right of each to view some of my projects at work!</li><br>
+    <li>All of my projects can be found on <a href = "https://github.com/BenGfoyle"> my github.</a> some of my favoirtes are below</li><br>
+    <li><a href = "https://github.com/BenGfoyle/Projectile-Motion">Projectile-Motion</a> is a python script to plot a 2D projectile in flight.</li><br>
+    <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/repls/FatalGraveTelecommunications?lite=true"></iframe>
+    <li><a href = "https://github.com/BenGfoyle/PythonEmail">PythonEmail</a> is a script designed to send emails from a gmail account to any email address.<br>
+
+</div>
+
+<div id="cv" class="tabcontent">
+  <object data="BenGuilfoyleResume.pdf" type="application/pdf" width="100%" height="100%">
+  <p>Alternative text - include a link <a href="BenGuilfoyleResume.pdf">to the PDF!</a></p>
+</object>
 </div>
 
 </body>
 </html>
 <script>
 
-
-
-
-function openSection(evt, sectionName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  function openSection(evt, sectionName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(sectionName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
 </script>
