@@ -75,8 +75,9 @@
   <script src="http://www.skulpt.org/static/skulpt-stdlib.js" type="text/javascript"></script>
 
 <div class="tab">
-  <button class="tablinks" onclick="openSection(event, 'About')">Thesis?</button>
-  <button class="tablinks" onclick="openSection(event, 'Cons')">Links</button>
+  <button class="tablinks" onclick="openSection(event, 'Thesis')">Thesis?</button>
+  <button class="tablinks" onclick="openSection(event, 'Links')">Links</button>
+  <button class="tablinks" onclick="openSection(event, 'Links')">Images/Files</button>
   <button class="tablinks" onclick="openSection(event, 'Refs')">References & Achknowledments</button>
 </div>
 
@@ -87,7 +88,7 @@
   <p>Special thanks to the following.</p>
 </div>
 
-<div id="Cons" class="tabcontent">
+<div id="Links" class="tabcontent">
   <h3>Contact Me Here:</h3>
   <li>Email: bengfoyle@gmail.com</li>
   <li><a href = https://github.com/BenGfoyle>Github</a></li>
@@ -95,40 +96,81 @@
 
 </div>
 
-<div id="About" class="tabcontent">
+<div id="Files" class="tabcontent">
+  <h3>Files:</h3>
+
+</div>
+
+<div id="Thesis" class="tabcontent">
 
   <div class="tab">
-    <button class="tablinks" onclick="openSection(event, 'basics')" id = "defaultOpen">About Me</button>
-    <button class="tablinks" onclick="openSection(event, 'work')">Work Experience</button>
-    <button class="tablinks" onclick="openSection(event, 'graphs')">Graphs</button>
-    <button class="tablinks" onclick="openSection(event, 'projects')">Projects</button>
-    <button class="tablinks" onclick="openSection(event, 'cv')">Resume</button>
+    <button class="tablinks" onclick="openSection(event, 'October')" id = "defaultOpen">October</button>
+    <button class="tablinks" onclick="openSection(event, 'November')">November</button>
+    <button class="tablinks" onclick="openSection(event, 'December')">December</button>
+    <button class="tablinks" onclick="openSection(event, 'January')">January</button>
+    <button class="tablinks" onclick="openSection(event, 'February')">February</button>
+    <button class="tablinks" onclick="openSection(event, 'March')">March</button>
+    <button class="tablinks" onclick="openSection(event, 'April')">April</button>
   </div>
 </div>
 
-<div id="basics" class="tabcontent">
-  <h1>My name is Ben Guilfoyle</h1>
-    <li>I am a 3rd year Physics with Astrophysics student at Maynooth University</li><br>
-    <li>My main interests are in computer science, problem solving, and annalysis.</li><br>
-    <li>This website aims to highlight some of my skills and projects.</li><br>
-    <li>Most my coding in the past year or so has been done in Python</li><br>
-    <li>As part of my Physics degree I am working physical simuations in Python</li><br>
-    <li>Some of these include my Projectile-Motion project.</li><br>
-    <li>I like graphs you can see some of those here too!.</li><br>
-    <li>I have taken an interest in crytocurrency and dapp development</li><br>
-    <li>I have designed my own cryptographic tokens on the Ethereum blockchain.</li><br>
-    <li>You can find more detail about all the above throughout this page.</li><br>
+<div id="October" class="tabcontent">
+  <h1>October</h1>
+  <div class = "row">
+    <div class = "collum">
+      <h2>Monday 21/10/2019</h2>
+      <li>Began work with astropy, a python library aimed at astrophysics and image processing.</li><br>
+      <li>Using this library I reproduces some of my FITS files. </li><br>
+      <li>I also began work looking into the correct process in which to reduce my image using the bias, dark and flats. </li><br>
+      <li>The corrected image can be expressed as; Raw - ((Dark + Bias)/Flat)</li><br>
+      <li>I have been unable to produce a combined image yet. I am getting th efollowing error when I try concatenate the images together.
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not method</li>
+      <li>My code is currently one test file as shown here.</li>
+      <img src = "C:\Users\bguilfoyle\Documents\FYP\dailyUpdates\code10_21_2019.png"></img>
+    </div>
+
+    <div class = "collum">
+      <h2>Monday 21/10/2019</h2>
+      <li>Began work with astropy, a python library aimed at astrophysics and image processing.</li><br>
+      <li>Using this library I reproduces some of my FITS files. </li><br>
+      <li>I also began work looking into the correct process in which to reduce my image using the bias, dark and flats. </li><br>
+      <li>The corrected image can be expressed as; Raw - ((Dark + Bias)/Flat)</li><br>
+      <li>I have been unable to produce a combined image yet. I am getting th efollowing error when I try concatenate the images together.
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not method</li>
+      <li>My code is currently one test file as shown here.</li>
+      <img src = "C:\Users\bguilfoyle\Documents\FYP\dailyUpdates\code10_21_2019.png"></img>
+    </div>
+    
 </div>
 
-<div id="work" class="tabcontent">
-  <h1>Work Experience</h1>
-    <li>Last year I spent the Summer working as an intern in Maynooth University</li><br>
-    <li>The task entailed designing a cryptocurrency on the Ethereum blockchain.</li><br>
-    <li>This currency was used as a medium to track students grades annonimously.</li><br>
-    <li>The token could be given by the lecturer to the student, but no student to student</li><br>
-    <li>The token ahs some master functions given to the lecturer.</li><br>
-    <li>One of these features was the Burn function used to clear empty all students wallets.</li><br>
-    <li>I have designed my own cryptographic tokens on the Ethereum blockchain.</li><br>
+<div id="November" class="tabcontent">
+  <h1>November</h1>
+    
+</div>
+
+<div id="December" class="tabcontent">
+  <h1>December</h1>
+    
+</div>
+
+<div id="January" class="tabcontent">
+  <h1>January</h1>
+    
+</div>
+
+<div id="February" class="tabcontent">
+  <h1>February</h1>
+    
+</div>
+
+<div id="March" class="tabcontent">
+  <h1>March</h1>
+    
+</div>
+
+<div id="April" class="tabcontent">
+  <h1>April</h1>
+    
 </div>
 
 <div id="projects" class="tabcontent">
